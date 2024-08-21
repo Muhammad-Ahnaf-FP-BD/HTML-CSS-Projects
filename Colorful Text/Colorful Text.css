@@ -1,0 +1,15 @@
+body
+{
+    background: rgb(200, 200, 200);
+}
+h1
+{
+    text-align: center;
+    line-height: 80vh;
+    font-size: 250%;
+    font-family: 'Verdana', sans-serif;
+    /* Coloring Part ↓ */
+    background: linear-gradient(to right, red, blue);
+    background-clip: text;
+    color: transparent;
+}

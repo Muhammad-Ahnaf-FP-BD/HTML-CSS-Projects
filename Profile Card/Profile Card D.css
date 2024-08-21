@@ -1,0 +1,135 @@
+body
+{
+    background: rgba(0, 0, 0, 0.1);
+}
+*
+{
+    font-family: 'Helvetica', sans-serif;
+}
+/* Head */
+#header
+{
+    box-shadow: 0 -3px 20px #333, 0 0 15px #555 inset;
+    width: 20%;
+    margin-top: 7%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px 15px 0 0;
+    background-color: #008080;
+    z-index: 3;
+}
+/* Profile Picture */
+img
+{
+    width: 8em;
+    border-radius: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    border: 3px solid #008080;
+    z-index: 5;
+}
+/* Main */
+#main
+{
+    box-shadow: 0 3px 20px #333;
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    width: 19.70%;
+    height: 45vh;
+    border: 1px solid #999;
+    background-color: rgb(250, 250, 250);
+    z-index: 1;
+    border-radius: 0 0 15px 15px;
+}
+/* Name & Short Bio */
+#name, #bio
+{
+    text-align: center;
+}
+#name
+{
+    color: rgb(10, 10, 255);
+    font-size: 125%;
+    transform: translate(6%, 40%);
+}
+#bio
+{
+    color: #008000;
+}
+/* Pages */
+#main #skill
+{
+    text-decoration: none;
+    background-color: rgb(30, 30, 255);
+    padding: 15px;
+    color: #fff;
+    border-radius: 100px;
+    margin-left: 50px;
+}
+#main #project
+{
+    text-decoration: none;
+    background-color: rgb(30, 30, 255);
+    padding: 15px;
+    color: #fff;
+    border-radius: 100px;
+    margin-left: 30px;
+}
+/* Social Media */
+.fab
+{
+    font-size: xx-large;
+    padding-top: 25px;
+}
+.fa-youtube
+{
+    padding-left: 45px;
+    color: #ff0000;
+}
+.fa-linkedin
+{
+    padding-left: 20px;
+    color: rgb(60, 60, 255);
+}
+.fa-facebook
+{
+    padding-left: 20px;
+    color: rgb(20, 20, 255);
+}
+.fa-github
+{
+    padding-left: 20px;
+    color: #222;
+}
+/* Verification */
+#name i
+{
+    color: #888;
+    padding-left: 12px;
+}
+/* Stats */
+.fas
+{
+    font-size: large;
+    padding-top: 25px;
+}
+.fa-star
+{
+    padding-left: 50px;
+}
+.fa-star ~ span
+{
+    padding-left: 5px;
+}
+.fa-user-check
+{
+    padding-left: 50px;
+}
+.fa-user-check ~ span
+{
+    padding-left: 5px;
+}

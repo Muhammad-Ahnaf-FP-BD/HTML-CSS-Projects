@@ -1,0 +1,75 @@
+/* Uncompleted */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #444;
+}
+
+.gcbb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 140px;
+    gap: 20px;
+}
+
+.gcbb label {
+    display: flex;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.gcbb label input {
+    appearance: none;
+}
+
+.gcbb label span {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #222;
+    border-radius: 6px;
+    background: linear-gradient(#555353, #363535, #303030);
+    box-shadow: inset 0 5px 1px rgba(0, 0, 0, 0.35), 0 5px 5px rgba(0, 0, 0, 0.5), 0 15px 25px rgba(0, 0, 0, 0.35);
+    align-items: center;
+    justify-content: center;
+}
+
+.gcbb label span::before {
+    content: ' ';
+    position: absolute;
+    inset: 5px 3px;
+    border-top: 1px solid #ccc;
+    filter: blur(2px);
+}
+
+.gcbb label i {
+    position: relative;
+    z-index: 10;
+    font-size: 1.5em;
+    color: #111;
+}
+
+.gcbb label input[type="checkbox"]:checked ~ span {
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.35), 0 5px 5px rgba(0, 0, 0, 0.5), 0 15px 25px rgba(0, 0, 0, 0.35);
+}
+
+.gcbb label input[type="checkbox"]:checked ~ i {
+    color: #fff;
+    text-shadow: 0 0 5px #219cf3, 0 0 8px #219cf3;
+}
